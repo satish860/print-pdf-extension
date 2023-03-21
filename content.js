@@ -1,18 +1,6 @@
 function printChatToPdf() {
-  var pdf = new jspdf.jsPDF("p", "mm", "a4");
-  var elementHTML = document.querySelector("main");
-  pdf.html(elementHTML, {
-    callback: function (doc) {
-      // Save the PDF
-      doc.save("document-html.pdf");
-    },
-    margin: [10, 10, 10, 10],
-    autoPaging: "text",
-    x: 0,
-    y: 0,
-    width: 190, //target width in the PDF document
-    windowWidth: 675, //window width in CSS pixels
-  });
+  const input = document.querySelector("main");
+  html2pdf(input);
 }
 
 function addPrintButton() {

@@ -1,6 +1,6 @@
 #my-extension-button {
   position: fixed;
-  bottom: 0px;
+  bottom: 10px;
   right: 20px;
-  width: 200px;
+  width: 100px;
 }
