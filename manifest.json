@@ -1,0 +1,14 @@
+{
+  "name": "Print PDF Extension",
+  "version": "0.1",
+  "manifest_version": 3,
+  "description": "Adds a Print PDF button to the chat.openai page.",
+  "permissions": ["tabs", "activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["https://chat.openai.com/*"],
+      "js": ["jspdf.js", "html2canvas.js", "content.js"],
+      "css": ["myscript.css"]
+    }
+  ]
+}
